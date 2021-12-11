@@ -11,6 +11,10 @@ export default function Home() {
         <meta name="description" content="All tasty foods in basic recipes!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <h1 className='text-3xl font-bold underline'>
+        Food Recipe Blog
+      </h1> 
     
     
     
