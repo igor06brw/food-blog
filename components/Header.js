@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function Header() {
     return (
-        <header className='flex flex-col my-4 '>
-            <div className='flex justify-center'>
+        <header className='flex flex-col mt-2'>
+            <div className='flex justify-center my-6'>
                 <Image
                     className='rounded-full'
                     src="https://lh3.googleusercontent.com/GrQx2bXJfqWsY5J9YVQdjixy0Mi675_bCLmV10_jSPJeVLLBgHuBk3or8gb95lsMYTmZMiYT8omiZYdB_64crHtCxVdL8dEpKd1m"
@@ -13,7 +13,7 @@ export default function Header() {
                     alt="Recipe Food"
                 />
             </div>
-            <h1 className=' text-center text-3xl font-bold'>
+            <h1 className=' text-center text-3xl font-bold font-extralight'>
                 Food Recipe Blog
             </h1>
         </header>
