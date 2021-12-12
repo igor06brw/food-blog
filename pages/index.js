@@ -29,7 +29,7 @@ export default function Home({ data }) {
       </Head>
       <Header />
       <Search />
-      <RecipeList recipes={data} />
+      <RecipeList recipes={data} itemsPerPage={6} />
     </div>
   )
 }
