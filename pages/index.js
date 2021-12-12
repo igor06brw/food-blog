@@ -4,8 +4,22 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '../components/Header'
 import Search from '../components/Search'
+import RecipeList from '../components/RecipeList'
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const res = await fetch("https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=58db830c&app_key=794e5ae32193b0e1a3e8ded017ea9f8f")
+
+  const data = await res.json()
+
+  return {
+    props: {
+      data,
+    }
+  }
+
+}
+
+export default function Home({ data }) {
   return (
     <div className="container mx-auto">
       <Head>
@@ -15,6 +29,7 @@ export default function Home() {
       </Head>
       <Header />
       <Search />
+      <RecipeList recipes={data} />
     </div>
   )
 }
