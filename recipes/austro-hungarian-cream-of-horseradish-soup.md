@@ -1,5 +1,9 @@
+---
+title: 'Austro-Hungarian Cream of Horseradish Soup'
+---
 # Austro-Hungarian Cream of Horseradish Soup  
 **(first had this in Salzburg, so good)**  
+
 
 ## ingredients  
 * 1 lb potatoes (high-starch, like russets) chopped into 1/2" chunks  
