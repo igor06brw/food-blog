@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Search from '../components/Search'
 import { getRecipesData } from '../lib/recipes';
 import Recipe  from '../components/Recipe'
+import Link from 'next/link'
 
 // export const getServerSideProps = async ({ req }) => {
 //   console.log(req.method, req.body)
@@ -42,7 +43,9 @@ export default function Home({ allRecipesData }) {
       <Search value={value} handleChange={handleChange}/>
       {
         allRecipesData.allRecipesData.map((recipe) => (
-          <Recipe recipe={recipe} key={recipe.id} />
+          <Link href={`/recipes/${recipe.id}`}>
+            <a className='flex flex-row justify-center'>{recipe.id}</a>
+          </Link>
         ))
       }
       
