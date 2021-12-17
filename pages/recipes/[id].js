@@ -6,6 +6,8 @@ export default function Recipe({ recipeData }) {
     return (
         <div>
             {recipeData.id}
+
+            <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} />
         </div>
     )
 }
@@ -21,7 +23,7 @@ export async function getStaticPaths() {
   }
 
 export async function getStaticProps({ params }) {
-    const recipeData = getRecipeData(params.id)
+    const recipeData = await getRecipeData(params.id)
     return {
       props: {
         recipeData
