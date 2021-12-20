@@ -13,8 +13,8 @@ export default function Header() {
                     alt="Recipe Food"
                 />
             </div>
-            <h1 className=' text-center text-3xl font-bold font-extralight'>
-                Food Recipe Blog
+            <h1 className=' text-center text-3xl font-bold font-extralight animate__animated animate__fadeInDown'>
+                Chicken Recipe Blog
             </h1>
         </header>
     )
