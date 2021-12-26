@@ -5,6 +5,7 @@ import Search from '../components/Search'
 import { getRecipesData } from '../lib/recipes';
 import Recipe  from '../components/Recipe'
 import Link from 'next/link'
+import Pagination from '../components/Pagination';
 
 // export const getServerSideProps = async ({ req }) => {
 //   console.log(req.method, req.body)
@@ -41,13 +42,7 @@ export default function Home({ allRecipesData }) {
       </Head>
       <Header />
       <Search value={value} handleChange={handleChange}/>
-      {
-        allRecipesData.allRecipesData.map((recipe) => (
-          <Link href={`/recipes/${recipe.id}`}>
-            <a className='flex flex-row justify-center'>{recipe.id}</a>
-          </Link>
-        ))
-      }
+      <Pagination items={allRecipesData.allRecipesData} />
       
     </div>
   )
