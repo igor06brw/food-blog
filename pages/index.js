@@ -6,6 +6,7 @@ import { getRecipesData } from '../lib/recipes';
 import Recipe  from '../components/Recipe'
 import Link from 'next/link'
 import Pagination from '../components/Pagination';
+import Layout from '../components/Layout';
 
 // export const getServerSideProps = async ({ req }) => {
 //   console.log(req.method, req.body)
@@ -34,17 +35,11 @@ export default function Home({ allRecipesData }) {
   }
 
   return (
-    <div className="container mx-auto w-max-content">
-      <Head>
-        <title>Chicken Recipe Blog</title>
-        <meta name="description" content="All tasty chickens in basic recipes!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Header />
+    <Layout>
       <Search value={value} handleChange={handleChange}/>
       <Pagination items={allRecipesData.allRecipesData} />
       
-    </div>
+    </Layout>
   )
 }
 
