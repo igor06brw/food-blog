@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
-import Head from 'next/head'
-import Header from '../components/Header'
 import Search from '../components/Search'
 import { getRecipesData } from '../lib/recipes';
-import Recipe  from '../components/Recipe'
-import Link from 'next/link'
 import Pagination from '../components/Pagination';
 import Layout from '../components/Layout';
 
@@ -33,11 +29,11 @@ export default function Home({ allRecipesData }) {
     setValue(e)
     console.log(e)
   }
-
+  console.log(allRecipesData, 'index')
   return (
     <Layout>
       <Search value={value} handleChange={handleChange}/>
-      <Pagination items={allRecipesData.allRecipesData} />
+      <Pagination items={allRecipesData.allRecipesData} itemsOnPage={3} />
       
     </Layout>
   )
