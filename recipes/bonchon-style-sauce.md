@@ -1,3 +1,9 @@
+---
+title: 'Bonchon-style Sauce'
+date: '21 July, 2018'
+image: '/images/recipes/image-1.jpg'
+---
+
 # Bonchon-style Sauce
 
 ## ingredients

@@ -1,3 +1,8 @@
+---
+title: 'BBQ Sauce'
+date: 'January 18, 2020'
+image: '/images/recipes/image-1.jpg'
+---
 # (Ketchup-based) BBQ Sauce
 
 ## ingredients  

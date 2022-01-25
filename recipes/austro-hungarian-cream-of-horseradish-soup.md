@@ -1,5 +1,7 @@
 ---
 title: 'Austro-Hungarian Cream of Horseradish Soup'
+date: 'May 11, 2019'
+image: '/images/recipes/image-1.jpg'
 ---
 # Austro-Hungarian Cream of Horseradish Soup  
 **(first had this in Salzburg, so good)**  

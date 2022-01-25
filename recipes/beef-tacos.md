@@ -1,3 +1,9 @@
+---
+title: 'Beef Tacos'
+date: 'August 12, 2021'
+image: '/images/recipes/image-1.jpg'
+---
+
 # Beef Tacos  
 
 ## info  

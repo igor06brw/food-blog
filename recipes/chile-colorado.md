@@ -1,3 +1,9 @@
+---
+title: 'Chile Colorado'
+date: 'May 10, 2020'
+image: '/images/recipes/image-1.jpg'
+---
+
 # Chile Colorado
 
 ## ingredients  

@@ -1,3 +1,9 @@
+---
+title: 'Biryani Shorba'
+date: 'February 2, 2022'
+image: '/images/recipes/image-1.jpg'
+---
+
 # Biryani Shorba  
 A sauce for biryani (or see note below)  
 
