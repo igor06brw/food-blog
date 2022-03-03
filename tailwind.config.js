@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       width: {
         'max-content': '960px'
+      },
+      translate: {
+        '-50%': '-50%'
       }
     },
   },
