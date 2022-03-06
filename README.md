@@ -3,7 +3,7 @@
 
 This project is aimed for learn about new features spotted in Next.js like components and data fetching. </p>
 
-:computer: Live view: [Food Blog](https://food-blog-12345.herokuapp.com/blog)
+:computer: Live view: [Food Blog](https://food-blog-12345.herokuapp.com)
 
 <h2>Tools</h2>
 
