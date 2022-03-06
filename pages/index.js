@@ -11,21 +11,37 @@ export default function Home({ recipes }) {
 
   return (
     <Layout>
-      <div>
+      <div className='flex flex-col flex-wrap justify-center'>
+        <h2 className='text-2xl text-center mt-24 font-extralight'>Latest Posts</h2>
+        <div className='flex flex-row justify-center'>
+        {
+          sortedByDate(recipes).slice(0, 3).map((recipe, index) => (
+            // eslint-disable-next-line react/jsx-key
+            <div>
+              <Recipe key={index} recipe={recipe} />
+              <p className='text-center'>{recipe.frontmatter.date}</p>
+            </div>
+          ))
+        }
+        </div>
+      </div>
+      <div className='flex mx-12 my-12 justify-center'>
         <Link href="/blog">
-          <a className="block">
+          <a className=" rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 ease-in-out duration-150 font-normal">
             All Recipes
           </a>
         </Link> 
       </div>
-      {
-        recipes.map((recipe, index) => 
-           <Recipe key={index} recipe={recipe} />
-        )
-      }
+      
 
     </Layout>
   )
+}
+
+const sortedByDate = (params) => {
+  return params.sort((param1, param2) => {
+    return Date.parse(param2.frontmatter.date) - Date.parse(param1.frontmatter.date)   
+  })
 }
 
 export async function getStaticProps() {
