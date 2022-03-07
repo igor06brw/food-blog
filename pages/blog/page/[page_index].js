@@ -9,7 +9,7 @@ import Pagination from '../../../components/Pagination';
 export default function BlogPage({ recipes, numPages, currentPage }) {
   return (
     <Layout>
-      <h1 className="text-5xl font-bold border-b-4 p-5">
+      <h1 className="text-5xl font-bold border-b-4 p-5 pt-12">
       Blog
       </h1>
 
