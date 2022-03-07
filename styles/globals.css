@@ -25,12 +25,15 @@ p {
   margin: 15px 0;
   line-height: 1.8;
 }
+.blog-text {
+  text-align: center;
+}
 
 .blog-text ul,
 ol {
-  font-size: 110%;
-  line-height: 2.3;
-  font-weight: bold;
+  font-size: 100%;
+  line-height: 2.1;
+  font-weight: normal;
   margin: 10px 0;
 }
 
@@ -42,13 +45,15 @@ ol {
 }
 
 .blog-text h1 {
-  font-size: 35px;
+  padding-top: 2em;
+  font-size: 3em;
 }
 
 .blog-text h2,
 .blog-text h3,
 .blog-text h4 {
-  font-size: 27px;
+  font-size: 37px;
+  padding-top: 1em;
 }
 
 /* Fix category colors in production */
