@@ -2,18 +2,18 @@ import matter from 'gray-matter';
 import fs from 'fs'
 import path from 'path'
 import React from 'react';
-import Recipe from '../../components/Recipe';
 import {marked} from 'marked'
+import Layout from '../../components/Layout';
+import { useRouter } from 'next/router'
 
 export default function BlogPage({ frontmatter: {title}, content}) {
-  return <div>
-
+    const router = useRouter()
+    return <Layout>
                 <div className="blog-text mt-2">
-                    <div dangerouslySetInnerHTML={{__html: marked(content)}}>
-
-                    </div>
+                    <div dangerouslySetInnerHTML={{__html: marked(content)}}></div>
+                    <button className="rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 ease-in-out duration-150 font-normal my-12" type="button" onClick={() => router.back()}>Back</button>
                 </div>
-  </div>;
+  </Layout>;
 }
 
 export async function getStaticPaths() {
